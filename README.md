@@ -1,4 +1,7 @@
-#CNodejs
+#nodePike
+1. restful api practice
+1. gulp(like grunt)
+1. mongoose
 
 ##Install Environment
 1. install node [donwload](http://nodejs.org/)
