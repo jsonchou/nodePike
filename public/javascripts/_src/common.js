@@ -1,7 +1,12 @@
+/*!
+ * common v1.0.0
+ * common.js
+ */
+
 $(function () {
     //checkUser();
     topicControl();
-});
+}); 
 
 function checkUser() {
     var ck = $.cookie('user');

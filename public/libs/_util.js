@@ -1,4 +1,9 @@
-﻿var _env = 'real'; //real,dev
+﻿/*!
+ * util v1.0.0
+ * util.js
+ */
+
+var _env = 'real'; //real,dev
 
 var _host = document.location.host;
 if (_host.indexOf('localhost:') > -1 || _host.indexOf('127.0.0.1') > -1 || _host.indexOf('10.1.') > -1) {
@@ -33,4 +38,4 @@ _uzw.cookie = {
             $.cookie(k, '', { expires: -1, path: '/', domain: _uzw.env === 'real' ? _domain : '' });
         }
     }
-}
+};
