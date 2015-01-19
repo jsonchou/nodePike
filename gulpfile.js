@@ -46,7 +46,7 @@ gulp.task('clean', function (cb) {
     .pipe(notify({ message: 'clean task complete' }));
 });
 
-//异步
+//async
 gulp.task('build', ['styles', 'scripts', 'combine'], function () {
     gulp.start('clean');
 });
