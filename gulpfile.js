@@ -39,6 +39,14 @@ gulp.task('combine', function () {
     .pipe(notify({ message: 'core-scripts task complete' }));
 });
 
+// Images
+gulp.task('images', function () {
+    return gulp.src(['public/img/**/*.{gif,jpg,png,svg}'])
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('public/img'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
 //clean
 gulp.task('clean', function (cb) {
     return gulp.src(['public/javascripts/_util.js', 'public/javascripts/common.js'])
@@ -47,7 +55,7 @@ gulp.task('clean', function (cb) {
 });
 
 //async
-gulp.task('build', ['styles', 'scripts', 'combine'], function () {
+gulp.task('build', ['styles', 'scripts', 'combine', 'images'], function () {
     gulp.start('clean');
 });
 

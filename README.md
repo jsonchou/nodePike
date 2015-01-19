@@ -13,4 +13,5 @@
 ##Run
 1. net start mongodb
 2. supervisor app.js
+3. gulp build
 
